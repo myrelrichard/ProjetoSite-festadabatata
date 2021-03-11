@@ -26,7 +26,7 @@
         <header>Festa da batata</header>
          <div id="subheader">
             <ul>
-                <li><a href="index.php">Página inicial</a></li>
+                <li><a href="index.html">Página inicial</a></li>
                 <li><a href="admin.php">Zona do administrador</a></li>
                 
             </ul>
