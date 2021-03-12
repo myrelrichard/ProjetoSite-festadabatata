@@ -47,7 +47,6 @@
                                 <td>Email</td>
                                 <td>Nome</td>
                                 <td>cidade</td>
-                                <td>ADM</td>
                             </tr>                
                         </thead>
                         <tbody>
@@ -64,7 +63,6 @@
                                 <td><?php echo $usuarioAtual["email"]; ?></td>
                                 <td><?php echo $usuarioAtual["nome"]; ?></td>
                                 <td><?php echo $usuarioAtual["cidade"]; ?></td>
-                                <td><?php echo $usuarioAtual["adm"]; ?></td>
                             </tr>
                             <?php endfor; ?>
                         </tbody>            
