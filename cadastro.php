@@ -38,7 +38,7 @@
             <div id="formulario" class="row" >
             
             <center><form id="formularioCadastro" class=" icon-box col-lg-4 col-md-6 mt-5 mt-md-0">
-                <span class="title">Crie sua conta:</span>
+                <span class="title">Lista de visitantes:</span>
                 <div id="linha">
                     <label for="nomeCadastro">Nome:</label><br/>
                     <input type="text" name="nomeCadastro" id="nomeCadastro" />
