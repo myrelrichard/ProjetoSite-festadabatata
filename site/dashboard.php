@@ -17,7 +17,8 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" type="text/css" href="style/dashboard.css" />
-        <title>Dashboard - <?php echo $nome; ?></title>
+        <link rel="icon" type="imagem/png" href="assets/img/logo/logo.png" />
+        <title>Festa Da Batata <?php echo $nome; ?></title>
     </head>
     <body>
         <?php if($adm): ?>
@@ -47,7 +48,8 @@
                             <tr>
                                 <td>Email</td>
                                 <td>Nome</td>
-                                <td>cidade</td>
+                                <td>Cidade</td>
+                                <td>Relação com o IFRN</td>
                             </tr>                
                         </thead>
                         <tbody>
@@ -64,6 +66,7 @@
                                 <td><?php echo $usuarioAtual["email"]; ?></td>
                                 <td><?php echo $usuarioAtual["nome"]; ?></td>
                                 <td><?php echo $usuarioAtual["cidade"]; ?></td>
+                                <td><?php echo $usuarioAtual["relecif"]; ?></td>
                             </tr>
                             <?php endfor; ?>
                         </tbody>            

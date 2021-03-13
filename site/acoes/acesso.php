@@ -19,8 +19,8 @@
                     echo $this->login($_POST["email"], $_POST["senha"]);
                     break;
 
-                case (isset($_POST["type"]) && $_POST["type"] == "cadastro" && isset($_POST["email"]) && isset($_POST["nome"]) && isset($_POST["cidade"])):
-                    echo $this->cadastro($_POST["email"], $_POST["nome"], $_POST["cidade"]);
+                case (isset($_POST["type"]) && $_POST["type"] == "cadastro" && isset($_POST["email"]) && isset($_POST["nome"]) && isset($_POST["cidade"]) && isset($_POST["relecif"])):
+                    echo $this->cadastro($_POST["email"], $_POST["nome"], $_POST["cidade"], $_POST["relecif"]);
                     break;
             }
         }
@@ -43,12 +43,12 @@
             }
         }
 
-        public function cadastro($email, $nome, $cidade){
+        public function cadastro($email, $nome, $cidade, $relecif){
             $conexao = $this->con;
 
-            $query = $conexao->prepare("INSERT INTO usuarios (email, nome, cidade) VALUES (?, ?, ?)");
+            $query = $conexao->prepare("INSERT INTO usuarios (email, nome, cidade, relecif) VALUES (?, ?, ?, ?)");
             
-            if($query->execute(array($email, $nome, $cidade))){
+            if($query->execute(array($email, $nome, $cidade, $relecif))){
                 session_start();
                 
                 
