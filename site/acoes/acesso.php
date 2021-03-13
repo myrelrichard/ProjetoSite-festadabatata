@@ -28,7 +28,7 @@
         public function login($email, $senha){
             $conexao = $this->con;
 
-            $query = $conexao->prepare("SELECT * FROM usuarios WHERE email = ? AND senha = ?");
+            $query = $conexao->prepare("SELECT * FROM admin WHERE email = ? AND senha = ?");
             $query->execute(array($email, $senha));
 
             if($query->rowCount()){
@@ -46,11 +46,11 @@
         public function cadastro($email, $nome, $cidade){
             $conexao = $this->con;
 
-            $query = $conexao->prepare("INSERT INTO usuarios (email, nome, cidade, adm) VALUES (?, ?, ?, ?)");
+            $query = $conexao->prepare("INSERT INTO usuarios (email, nome, cidade) VALUES (?, ?, ?)");
             
-            if($query->execute(array($email, $nome, $cidade, 0))){
+            if($query->execute(array($email, $nome, $cidade))){
                 session_start();
-                $_SESSION["usuario"] = array($nome, 0);
+                
                 
                 return json_encode(array("erro" => 0));
             }else{

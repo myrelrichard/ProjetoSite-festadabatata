@@ -1,10 +1,4 @@
-<?php
-    session_start();
 
-    if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])){
-        echo "<script>window.location = 'dashboard.php'</script>";
-    }
-?>
 <html>
 
     <head>
@@ -40,15 +34,15 @@
             <center><form id="formularioCadastro" class=" icon-box col-lg-4 col-md-6 mt-5 mt-md-0">
                 <span class="title">Lista de visitantes:</span>
                 <div id="linha">
-                    <label for="nomeCadastro">Nome:</label><br/>
+                    <label for="nomeCadastro"> Insira seu nome:</label><br/>
                     <input type="text" name="nomeCadastro" id="nomeCadastro" />
                 </div>
                 <div id="linha">
-                    <label for="cidade">Cidade</label><br/>
+                    <label for="cidade">Qual a sua cidade:</label><br/>
                     <input type="text" name="cidade" id="cidade" />
                 </div>
                 <div id="linha">
-                    <label for="emailCadastro">Email:</label><br/>
+                    <label for="emailCadastro">Digite seu email:</label><br/>
                     <input type="text" name="emailCadastro" id="emailCadastro" />
                 </div>
                 <div id="button">

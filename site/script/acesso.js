@@ -61,7 +61,7 @@ $(function(){
                         $("div#mensagem").show().addClass("red").html(retorno["mensagem"]);
                     }else{
 
-                        window.location = "dashboard.php";
+                        window.location = "cadastrado.html";
                     }
                 },
 

@@ -20,6 +20,7 @@
         <title>Dashboard - <?php echo $nome; ?></title>
     </head>
     <body>
+        <?php if($adm): ?>
         <header>
             <div id="content">
                 <div id="user">
@@ -29,7 +30,7 @@
                 <br/>
                 <br/>
 
-                <span class="logo">Cadastrado!</span>
+                <span class="logo">Lista de visitantes</span>
                 <div id="logout">
                     <a href="acoes/logout.php"><button>Sair</button></a>
                 </div>
@@ -37,7 +38,7 @@
         </header>
 
         <div id="content">
-            <?php if($adm): ?>
+            
                 <div id="tabelaUsuarios">
                     <span class="title">Lista de usuários</span>
 
