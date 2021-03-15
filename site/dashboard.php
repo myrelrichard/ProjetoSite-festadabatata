@@ -16,8 +16,9 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" type="text/css" href="style/dashboard.css" />
+        <link rel="stylesheet" type="text/css" href="style/dashboard2.css" />
         <link rel="icon" type="imagem/png" href="assets/img/logo/logo.png" />
+
         <title>Festa Da Batata <?php echo $nome; ?></title>
     </head>
     <body>
@@ -38,7 +39,7 @@
             </div>
         </header>
 
-        <div id="content">
+        <div id="content" >
             
                 <div id="tabelaUsuarios">
                     <span class="title">Lista de usuários</span>
@@ -49,7 +50,7 @@
                                 <td>Email</td>
                                 <td>Nome</td>
                                 <td>Cidade</td>
-                                <td>Relação com o IFRN</td>
+                                <td>Comentários</td>
                             </tr>                
                         </thead>
                         <tbody>
@@ -63,10 +64,10 @@
                                     $usuarioAtual = $users[$i];
                             ?>
                             <tr>
-                                <td><?php echo $usuarioAtual["email"]; ?></td>
+                                <td ><?php echo $usuarioAtual["email"]; ?></td>
                                 <td><?php echo $usuarioAtual["nome"]; ?></td>
                                 <td><?php echo $usuarioAtual["cidade"]; ?></td>
-                                <td><?php echo $usuarioAtual["relecif"]; ?></td>
+                                <td><?php echo $usuarioAtual["coment"]; ?></td>
                             </tr>
                             <?php endfor; ?>
                         </tbody>            
