@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+@font-face{
+    font-family: "MuseoSans";
+    src: url("fontes/museosans.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "FuturaPT";
+    src: url("fontes/FuturaPT.otf") format("opentype");
+    display: grid;
+}
+    .footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: MuseoSans;
+    font-size: 22px;
+    letter-spacing: 3px;
+    background: #1c2133;
+
+    
+}
+body, html p{
+    width: 100%;
+    height: 100%;
+    
+    background-repeat: no-repeat;
+}
+body{
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/logo/fundo.jpeg"); 
+    width: 100%;
+    
+    position: relative;
+    background-repeat: no-repeat; 
+    position: center;
+    background-size: cover; 
+    background-position:  center;
+    max-width:100%;
+    height:900px; 
+}
+
+header{
+    padding: 30px 0;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: MuseoSans;
+    font-size: 22px;
+    letter-spacing: 3px;
+    background: #1c2133;
+    position: relative;
+    z-index: 2;
+}
+
+div#subheader{
+    width: 100%;
+    display: block;
+    background: #21273d;
+    text-align: center;
+    height: 60px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
+    z-index: 1;
+    position: relative;
+}
+
+div#subheader li{
+    display: inline-block;
+}
+
+div#subheader li a{
+    font-family: MuseoSans;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    height: 14px;
+    padding: 23px 12px;
+    display: block;
+    transition: .4s;
+}
+
+div#subheader li a:hover{
+    color: #D29F4E;
+    background: #1c2133;
+}
+
+div#mensagem{
+    padding: 15px 0;
+    font-family: MuseoSans;
+    color: #fff;
+    background: #ffc36b;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: none;
+}
+
+div#mensagem.red{
+    background: #F90055;
+}
+
+.services .icon-box {
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 55px;
+  border-radius: 50px;
+  background:#1c2133;
+  box-shadow: 0 2px 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+  max-width: 500;
+  height: 100%;
+
+}
+.services .row label{ /* nomes do forms */
+    color: white;
+    text-align: center;
+    font-family: "MuseoSans";
+}
+.services .icon-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 2px 35px 0 rgba(68, 88, 144, 0.2);
+}
+.services .title {
+  margin-left: 10px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .title { /* o form de cadastro e login */
+  font-family: "MuseoSans";
+    font-size: 20px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+.services button{ /* botao */
+    margin-top: 30px;
+    font-family: MuseoSans;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 14px 40px;
+    background: #964b00;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+
+.footer2 {
+
+  position:fixed;
+    bottom:0;
+    width:100%;
+    padding: 10px 0;
+    
+    
+    background: #1c2133;
+}
+.footer2 a {
+    
+    
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "MuseoSans";
+    color: #964b00;
+    }
+
