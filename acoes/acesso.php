@@ -10,12 +10,12 @@
 
         public function send(){
 
-            //if(empty($_POST) || $this->con == null){
-                //echo json_encode(array("erro" => 1, "mensagem" => "Ocorreu um erro interno no servidor."));
-                echo json_encode(array("erro" => 1, "mensagem" => $this->con));
+            if(empty($_POST) || $this->con == null){
+                echo json_encode(array("erro" => 1, "mensagem" => "Ocorreu um erro interno no servidor."));
+                //echo json_encode(array("erro" => 1, "mensagem" => $this->con));
                 
                 return;
-            //}
+            }
 
             switch(true){
                 case (isset($_POST["type"]) && $_POST["type"] == "login" && isset($_POST["email"]) && isset($_POST["senha"])):

@@ -19,8 +19,8 @@
                 $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 
             }catch(PDOException $erro){
-                $conexao = $erro->getMessage();
-                //$conexao = null;
+                //$conexao = $erro->getMessage();
+                $conexao = null;
             }
             return $conexao;
         }
