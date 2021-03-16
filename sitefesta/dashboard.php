@@ -47,10 +47,12 @@
                     <table>
                         <thead>
                             <tr>
+                              
                                 <td>Email</td>
                                 <td>Nome</td>
                                 <td>Cidade</td>
                                 <td>Comentários</td>
+                                <td>Data</td>
                             </tr>                
                         </thead>
                         <tbody>
@@ -64,10 +66,12 @@
                                     $usuarioAtual = $users[$i];
                             ?>
                             <tr>
+                                
                                 <td ><?php echo $usuarioAtual["email"]; ?></td>
                                 <td><?php echo $usuarioAtual["nome"]; ?></td>
                                 <td><?php echo $usuarioAtual["cidade"]; ?></td>
                                 <td><?php echo $usuarioAtual["coment"]; ?></td>
+                                <td><?php echo $usuarioAtual["data"]; ?></td>
                             </tr>
                             <?php endfor; ?>
                         </tbody>            
