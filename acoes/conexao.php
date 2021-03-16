@@ -11,7 +11,7 @@
         private $usuario = "batata";
         private $senha = "f3st@b@t123";
         private $banco = "festabatata";
-        private $porta = "3306";
+        private $porta = "3307";
         
         public function conectar(){
             try{
