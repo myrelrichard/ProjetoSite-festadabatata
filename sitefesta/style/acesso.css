@@ -47,12 +47,14 @@ body, html p{
 body{
     background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/logo/fundo.jpeg"); 
     width: 100%;
+    
+    position: relative;
     background-repeat: no-repeat; 
     position: center;
     background-size: cover; 
     background-position:  center;
     max-width:100%;
-    height:400px; 
+    height:900px; 
 }
 
 header{
