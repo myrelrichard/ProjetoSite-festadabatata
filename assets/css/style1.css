@@ -561,7 +561,7 @@ section {
 # ================================================================= Services eventos ===============================================================
 --------------------------------------------------------------*/
 .services .icon-box {
-  padding: 10px;
+  padding: 5px;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -800,7 +800,7 @@ section {
 .team .member .member-img {
   position: relative;
   overflow: hidden;
-  width: 160px;
+  width: 150px;
 }
 
 .team .member .social {
@@ -1056,8 +1056,8 @@ section {
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 45px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   transition: 0.3s;
 }
 
