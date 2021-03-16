@@ -56,7 +56,7 @@
         </div>
         </section>
         <center><div class="footer2">
-        <a href='https://www.instagram.com/neabicang/?igshid=1hgg9ac8y3dro'>Copyright © 2020 - NEABI - IFRN</a>
+        <a href='https://www.instagram.com/neabicang/?igshid=1hgg9ac8y3dro'>Copyright © 2020 - NEABI - Canguaretama IFRN</a>
     </div></center>
 
     <script src="assets/vendor/jquery/jquery.min.js"></script>
