@@ -10,6 +10,7 @@
 
         public function send(){
             if(empty($_POST) || $this->con == null){
+                
                 echo json_encode(array("erro" => 1, "mensagem" => "Ocorreu um erro interno no servidor."));
                 return;
             }
