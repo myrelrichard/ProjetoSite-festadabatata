@@ -73,14 +73,4 @@ $(function(){
             });
         }
     });
-
-    $("button.change").on("click", function(){
-        $("div#formulario").toggleClass("cadastro");
-
-        $("form#formularioCadastro").toggle();
-        $("form#formularioLogin").toggle();
-        
-        $("div#textoLogin").toggle();
-        $("div#textoCadastro").toggle();
-    });
 });
