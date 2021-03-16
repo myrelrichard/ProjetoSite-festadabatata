@@ -1073,3 +1073,17 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+/*cadastro.html*/
+.services .icon-box1 {
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 55px;
+  border-radius: 50px;
+  background:#1c2133;
+  box-shadow: 0 2px 29px 0 rgba(68, 88, 144, 0.12);
+  width: 100%;
+  max-width: 500;
+  height: 100%;
+
+}

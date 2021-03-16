@@ -10,7 +10,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>Festa da batata</title>
-        <link rel="stylesheet" type="text/css" href="style/acesso1.css" />
+        <link rel="stylesheet" type="text/css" href="style/acesso.css" />
         <script type="text/javascript" src="script/jquery.js"></script>
         <script type="text/javascript" src="script/acesso.js"></script>
         <link rel="icon" type="imagem/png" href="assets/img/logo/logo.png" />

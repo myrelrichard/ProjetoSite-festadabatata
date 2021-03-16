@@ -28,11 +28,7 @@
                 <div id="user">
                     <span><?php echo $adm ? $nome." (ADM)" : $nome; ?></span>
                 </div>
-                <br/>
-                <br/>
-                <br/>
-
-                <span class="logo">Lista de visitantes</span>
+               
                 <div id="logout">
                     <a href="acoes/logout.php"><button>Sair</button></a>
                 </div>
@@ -42,7 +38,7 @@
         <div id="content" >
             
                 <div id="tabelaUsuarios">
-                    <span class="title">Lista de usuários</span>
+                    <span class="title">Lista de visitantes</span>
 
                     <table>
                         <thead>
