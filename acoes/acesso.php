@@ -19,7 +19,7 @@
 
             switch(true){
                 case (isset($_POST["type"]) && $_POST["type"] == "login" && isset($_POST["email"]) && isset($_POST["senha"])):
-                    echo $this->login($_POST["email"], $_POST["senha"]);
+                    echo $this->login($_POST["email"], md5($_POST["senha"]));
                     break;
 
                 case (isset($_POST["type"]) && $_POST["type"] == "cadastro" && isset($_POST["email"]) && isset($_POST["nome"]) && isset($_POST["cidade"]) && isset($_POST["coment"]) && isset($_POST["date"])):
