@@ -5,7 +5,7 @@
         private $usuario = "root";
         private $senha = "";
         private $banco = "festabatata";
-        private $porta = "3306"; era 9 pra o pc de bruno
+        private $porta = "3306";
         */
         private $server = "localhost";
         private $usuario = "batata";

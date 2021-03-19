@@ -22,8 +22,8 @@
                     echo $this->login($_POST["email"], md5($_POST["senha"]));
                     break;
 
-                case (isset($_POST["type"]) && $_POST["type"] == "cadastro" && isset($_POST["email"]) && isset($_POST["nome"]) && isset($_POST["cidade"]) && isset($_POST["coment"]) && isset($_POST["date"])):
-                    echo $this->cadastro($_POST["email"], $_POST["nome"], $_POST["cidade"], $_POST["coment"], $_POST["date"]);
+                case (isset($_POST["type"]) && $_POST["type"] == "cadastro" && isset($_POST["email"]) && isset($_POST["nome"]) && isset($_POST["cidade"]) && isset($_POST["coment"])):
+                    echo $this->cadastro($_POST["email"], $_POST["nome"], $_POST["cidade"], $_POST["coment"]);
                     break;
             }
         }
@@ -46,12 +46,12 @@
             }
         }
 
-        public function cadastro($email, $nome, $cidade, $coment, $date){
+        public function cadastro($email, $nome, $cidade, $coment){
             $conexao = $this->con;
 
-            $query = $conexao->prepare("INSERT INTO usuarios (email, nome, cidade, coment, data) VALUES (?, ?, ?, ?, ?)");
+            $query = $conexao->prepare("INSERT INTO usuarios (email, nome, cidade, coment, data) VALUES (?, ?, ?, ?, NOW())");
             
-            if($query->execute(array($email, $nome, $cidade, $coment, $date))){
+            if($query->execute(array($email, $nome, $cidade, $coment))){
                 session_start();
                 
                 

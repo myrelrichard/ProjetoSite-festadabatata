@@ -41,9 +41,9 @@ $(function(){
         var campoNome = $("form#formularioCadastro #nomeCadastro").val();
         var campoCidade = $("form#formularioCadastro #cidade").val();
         var campoComent = $("form#formularioCadastro #coment").val();
-        var campoDate = $("form#formularioCadastro #date").val();
+        
 
-        if(campoEmail.trim() == "" || campoNome.trim() == "" || campoCidade.trim() == "" || campoComent.trim() == "" || campoDate.trim() == ""){
+        if(campoEmail.trim() == "" || campoNome.trim() == "" || campoCidade.trim() == "" || campoComent.trim() == "" ){
             $("div#mensagem").show().removeClass("red").html("Preencha todos os campos.");
         }else{
             $.ajax({
@@ -54,8 +54,8 @@ $(function(){
                     email: campoEmail,
                     nome: campoNome,
                     cidade: campoCidade,
-                    coment: campoComent,
-                    date: campoDate
+                    coment: campoComent
+                    
                 },
 
                 success: function(retorno){
